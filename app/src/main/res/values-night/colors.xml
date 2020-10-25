@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#dbe775</color><!--lime 300-->
+    <color name="colorPrimaryDark">#afb42b</color>
+    <color name="colorSecondary">#8a75e7</color>
+    <color name="colorSecondaryVariant">#8560C5</color>
+
+    <color name="colorError">#cf6679</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorSurface">#121212</color>
+
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorOnError">#000000</color>
+
+    <!--  material_indigo_200  -->
+    <color name="material_indigo">#9fa8da</color>
+    <!--  material_light_blue_200  -->
+    <color name="material_light_blue">#81d4fa</color>
+    <!--  material_pink_200  -->
+    <color name="material_pink">#f48fb1</color>
+    <!--  material_purple_200  -->
+    <color name="material_purple">#ce93d8</color>
+    <!--  material_red_200  -->
+    <color name="material_red">#ef9a9a</color>
+
+</resources>

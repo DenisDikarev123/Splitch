@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.splitch"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    def navigationVersion = '2.3.0-rc01'
+    def lottieVersion = "3.4.0"
+    def roomVersion = "2.2.5"
+    def paginationVersion = "2.1.2"
+    def firebaseAnalyticsVersion = '17.4.3'
+    def rxAndroidVersion = "2.0.0"
+    def viewModelVersion = "2.2.0"
+    def preferenceVersion = "1.1.1"
+    def materialCompVersion = '1.3.0-alpha01'
+    def hamcrestVersion = "2.2"
+    def mockitoCoreVersion = "2.19.0"
+    def mockitoInlineVersion = "2.13.0"
+    def testingCoreVersion = "2.1.0"
+    def recyclerViewVersion = "1.2.0-alpha03"
+
+
+    //default implementations
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //recycler view
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+
+    //material components
+    implementation "com.google.android.material:material:$materialCompVersion"
+
+    //view model
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$viewModelVersion"
+
+    //room (core libraries)
+    implementation "androidx.room:room-runtime:$roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$roomVersion"
+
+    //room with rxJava2
+    implementation "androidx.room:room-rxjava2:$roomVersion"
+
+    //room test helper
+    testImplementation "androidx.room:room-testing:$roomVersion"
+
+    //rxandroid
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+
+    //pagination
+    implementation "androidx.paging:paging-runtime:$paginationVersion"
+    // alternatively - without Android dependencies for testing
+    testImplementation "androidx.paging:paging-common:$paginationVersion"
+    // optional - RxJava support
+    implementation "androidx.paging:paging-rxjava2:$paginationVersion"
+
+    // navigation component
+    implementation "androidx.navigation:navigation-fragment:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui:$navigationVersion"
+
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$navigationVersion"
+
+    // Preference
+    implementation "androidx.preference:preference:$preferenceVersion"
+
+    // dependency for android tests for execution rule
+    androidTestImplementation "androidx.arch.core:core-testing:$testingCoreVersion"
+
+    // Mockito for unit tests
+    testImplementation "org.mockito:mockito-core:$mockitoCoreVersion"
+    //for mocking final classes
+    testImplementation "org.mockito:mockito-inline:$mockitoInlineVersion"
+
+    // hamcrest annotation for unit testing
+    testImplementation "org.hamcrest:hamcrest:$hamcrestVersion"
+
+    //lottie
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //firebase analytics
+    implementation "com.google.firebase:firebase-analytics:$firebaseAnalyticsVersion"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/receiptFragment">
+
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="com.example.splitch.features.receipt.AddingReceiptFragment"
+        android:label="ReceiptFragment"
+        tools:layout="@layout/fragment_base">
+        <action
+            android:id="@+id/action_receiptFragment_to_addingPersonsFragment"
+            app:destination="@id/addingPersonsFragment"
+            app:popUpTo="@id/receiptFragment" />
+        <action
+            android:id="@+id/action_receiptFragment_to_receiptBottomSheetDialogFragment"
+            app:destination="@id/receiptBottomSheetDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingPersonsFragment"
+        android:name="com.example.splitch.features.adding_persons.AddingPersonsFragment"
+        android:label="AddingPersonsFragment"
+        tools:layout="@layout/fragment_base">
+        <action
+            android:id="@+id/action_addingPersonsFragment_to_personsBottomSheetFragment"
+            app:destination="@id/personsBottomSheetFragment" />
+        <action
+            android:id="@+id/action_addingPersonsFragment_to_splittingFragment"
+            app:destination="@id/splittingFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/personsBottomSheetFragment"
+        android:name="com.example.splitch.features.adding_persons.PersonsBottomSheetFragment"
+        android:label="PersonsBottomSheetFragment"
+        tools:layout="@layout/fragment_person_bottom_sheet"/>
+    <fragment
+        android:id="@+id/splittingFragment"
+        android:name="com.example.splitch.features.splitting.SplittingFragment"
+        android:label="SplittingFragment"
+        tools:layout="@layout/fragment_base">
+        <action
+            android:id="@+id/action_splittingFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_splittingFragment_to_helpFragment"
+            app:destination="@id/helpFragment">
+            <argument
+                android:name="tag"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <dialog
+        android:id="@+id/receiptBottomSheetDialogFragment"
+        android:name="com.example.splitch.features.receipt.ReceiptBottomSheetFragment"
+        android:label="ReceiptBottomSheetDialogFragment"
+        tools:layout="@layout/fragment_dialog_receipt_bottom_sheet"/>
+    <dialog
+        android:id="@+id/navigationBottomSheetFragment"
+        android:name="com.example.splitch.NavigationBottomSheetFragment"
+        android:label="NavigationBottomSheetFragment"
+        tools:layout="@layout/fragment_bottom_sheet_navigation">
+        <action
+            android:id="@+id/action_navigationBottomSheetFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_navigationBottomSheetFragment_to_feedbackFragment"
+            app:destination="@id/feedbackFragment" />
+    </dialog>
+    <action
+        android:id="@+id/action_global_navigationBottomSheetFragment"
+        app:destination="@id/navigationBottomSheetFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.splitch.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.splitch.features.result.ResultFragment"
+        android:label="ResultFragment" >
+        <action
+            android:id="@+id/action_resultFragment_to_helpFragment"
+            app:destination="@id/helpFragment">
+            <argument
+                android:name="tag"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.example.splitch.FeedbackFragment"
+        android:label="FeedbackFragment" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.splitch.HelpFragment"
+        android:label="HelpFragment" />
+</navigation>

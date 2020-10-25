@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name" translatable="false">Splitch</string>
+    <string name="product_name_hint">Название</string>
+    <string name="product_price_hint">Цена</string>
+    <string name="action_add">Добавить</string>
+    <string name="action_choose">Выбрать</string>
+    <string name="error_empty_name">Введите название</string>
+    <string name="error_empty_price">Введите цену</string>
+    <string name="error_incorrect_price">Введите корректные данные</string>
+    <string name="error_max_price">Слишком большая цена</string>
+    <string name="action_select_picture">Выберите изображение с чеком</string>
+    <string name="name_text_placeholder">Сухарики</string>
+    <string name="price_text_placeholder" translatable="false">24.00</string>
+    <string name="name_person_placeholder">Денис</string>
+    <string name="msg_avatar">Аватар</string>
+    <string name="add_persons_hint">Добавьте участников вручную или из ваших контактов</string>
+    <string name="add_products_hint">Добавляйте позиции чека вручную или загрузите фото чека из галереи</string>
+    <string name="title_receipt_content">Добавление товара</string>
+    <string name="title_add_persons">Добавление участников</string>
+    <string name="title_results">Результаты</string>
+    <string name="title_choose_persons">Выберите участников</string>
+    <string name="msg_item_deleted">Товар удален</string>
+    <string name="msg_person_deleted">Участник удален</string>
+    <string name="title_delete_alert">Удалить товар?</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="msg_item_insert">Товар добавлен</string>
+    <string name="msg_item_update">Товар изменен</string>
+    <string name="msg_person_insert">Участник добавлен</string>
+    <string name="msg_person_update">Участник изменен</string>
+    <string name="action_add_manually">Добавить вручную</string>
+    <string name="action_sharing">Поделиться</string>
+    <string name="action_complete">Завершить</string>
+    <string name="action_add_from_contacts">Добавить из списка контактов</string>
+    <string name="action_done">Подтвердить</string>
+    <string name="action_change">Изменить</string>
+    <string name="title_navigation_icon">Меню</string>
+    <string name="action_allow">Разрешить</string>
+    <string name="msg_contacts_access_required">Доступ к контактам необходим чтобы добавить участников.</string>
+    <string name="msg_persons_inserted">Участники добавлены</string>
+    <string name="title_splitting">Разделение чека</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_color">Цвет</string>
+    <string name="person_hint">Имя</string>
+    <string name="title_send_feedback">Оправить отзыв</string>
+    <string name="title_dark_theme">Темная тема</string>
+    <string name="key_settings_theme" translatable="false">theme</string>
+    <string name="description_person_avatar">Аватар участника</string>
+    <string name="error_product_without_person">Не у всех продуктов есть плательщики</string>
+    <string name="pref_feedback_key" translatable="false">send_feedback</string>
+    <string name="pref_rate_app_key" translatable="false">key_rate_app</string>
+    <string name="mail_feedback_subject">Отзыв о приложении Splitch</string>
+    <string name="mail_feedback_address" translatable="false">incsplitch@gmail.com</string>
+    <string name="title_write_to_developers">Написать разработчикам</string>
+    <string name="title_rate_app">Оценить приложение</string>
+    <string name="title_complete">Завершить?</string>
+    <string name="msg_complete_with_app">После завершение работа в приложении начнется с начала. Все данные будут удалены. Чтобы не потерять данные, поделитесь ими.</string>
+    <string name="msg_total">Итого:</string>
+    <string name="msg_thank_you">Спасибо что воспользовались приложением Splitch!</string>
+    <string name="action_help">Подсказка</string>
+    <string name="msg_splitting_hint">Выберите плательщиков для всех товаров из списка.</string>
+    <string name="msg_result_hint">Отправьте результаты другим участников или завершите работу с текущим чеком.</string>
+    <string name="action_show">Показать</string>
+    <string name="msg_choose_payer">Выберите плательщика</string>
+</resources>

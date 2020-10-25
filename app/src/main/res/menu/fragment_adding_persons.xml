@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_manually"
+        android:title="@string/action_add_manually"
+        android:icon="@drawable/ic_pencil_plus_outline"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_add_from_contacts"
+        android:title="@string/action_add_from_contacts"
+        android:icon="@drawable/ic_group_add_outline_24dp"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/title_write_to_developers"
+        android:key="@string/pref_feedback_key"
+        android:persistent="false" />
+
+    <Preference
+        android:title="@string/title_rate_app"
+        android:key="@string/pref_rate_app_key"
+        android:persistent="false" />
+
+</PreferenceScreen>
