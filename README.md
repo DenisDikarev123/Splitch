@@ -7,7 +7,7 @@ Splitch
 ----------
 
 * Android Studio 3.6 
-* Grandle 3.6
+* Gradle 3.6
 
 Демонстрация
 ------------
